@@ -67,47 +67,41 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 Untuk menjalankan clone Laravel dari orang lain, Anda perlu mengikuti langkah-langkah berikut:
+Clone repositori Laravel dari GitHub. Anda dapat menggunakan salah satu dari dua metode berikut:
+HTTPS: Jalankan perintah berikut di terminal Anda:
+        
 
-    Clone repositori Laravel dari GitHub. Anda dapat menggunakan salah satu dari dua metode berikut:
-        HTTPS: Jalankan perintah berikut di terminal Anda:
+    git clone https://github.com/[nama-pengguna]/[nama-repositori]
 
-git clone https://github.com/[nama-pengguna]/[nama-repositori]
 
-    SSH: Jalankan perintah berikut di terminal Anda:
+SSH: Jalankan perintah berikut di terminal Anda:
 
-git clone git@github.com:[nama-pengguna]/[nama-repositori]
+    git clone git@github.com:[nama-pengguna]/[nama-repositori]
 
-    Masuk ke direktori proyek Laravel. Jalankan perintah berikut di terminal Anda:
+    cd [nama-repositori]
 
-cd [nama-repositori]
+Instal dependensi Laravel. Jalankan perintah berikut di terminal Anda:
+    
+    
+    composer install
 
-    Instal dependensi Laravel. Jalankan perintah berikut di terminal Anda:
+Buat file .env. Jalankan perintah berikut di terminal Anda:
 
-composer install
+    cp .env.example .env
 
-    Buat file .env. Jalankan perintah berikut di terminal Anda:
+Konfigurasi file .env. Sesuaikan pengaturan di file .env sesuai dengan kebutuhan Anda.
+Buat database MySQL. Buat database MySQL baru dan masukkan pengaturan database Anda ke file .env.
+Migrasi database. Jalankan perintah berikut di terminal Anda untuk membuat dan menerapkan migrasi database Laravel:
 
-cp .env.example .env
+    php artisan migrate
 
-    Konfigurasi file .env. Sesuaikan pengaturan di file .env sesuai dengan kebutuhan Anda.
+Buat server web lokal. Anda dapat menggunakan salah satu dari dua metode berikut: PHP built-in web server: Jalankan perintah berikut di terminal Anda:
 
-    Buat database MySQL. Buat database MySQL baru dan masukkan pengaturan database Anda ke file .env.
+    php artisan serve
+    
 
-    Migrasi database. Jalankan perintah berikut di terminal Anda untuk membuat dan menerapkan migrasi database Laravel:
+Kunjungi situs web Laravel. Buka browser web Anda dan masukkan URL berikut:
 
-php artisan migrate
-
-    Buat server web lokal. Anda dapat menggunakan salah satu dari dua metode berikut:
-        PHP built-in web server: Jalankan perintah berikut di terminal Anda:
-
-php artisan serve
-
-    Laravel Homestead: Instal Laravel Homestead di komputer Anda. Setelah Homestead terinstal, Anda dapat menjalankan perintah berikut di terminal Anda untuk memulai server web Homestead:
-
-vagrant up
-
-    Kunjungi situs web Laravel. Buka browser web Anda dan masukkan URL berikut:
-
-http://localhost:8000
+    http://localhost:8000
 
 Anda akan melihat halaman beranda Laravel.
